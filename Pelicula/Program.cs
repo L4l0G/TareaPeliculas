@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace Pelicula
 {
-
     public class Pelicula
     {
         //Campo
