@@ -92,17 +92,18 @@ namespace Pelicula
            Pelicula p1 = new Pelicula();
            Pelicula p2 = new Pelicula();
            p1.SetTitulo("Parasite");
-           p1.SetAño(2019);
+           p1.SetAño (2019);
            p1.AgregaActor(new Actor("Song Kang-ho", 1967));
            p1.ImprimeActores();
            p1.AgregaActor(new Actor("Cho Yeo-jeong", 1981));
            p1.ImprimeActores();
            Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
-           p2.SetTitulo("La La Land");
-           p2.SetAño(2016);
-           p2.AgregaActor(new Actor ("Ryan Gosling", 1980));
+           p2.SetTitulo("La La Land ");
+           
+           p2.SetAño (2016);
+           p2.AgregaActor(new Actor ("Ryan Gosling", (1980)));
            p2.ImprimeActores();
-        p2.AgregaActor(new Actor ("Emma Stone", 1988));
+           p2.AgregaActor(new Actor ("Emma Stone", (1988)));
            p2.ImprimeActores();
            Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño());
         }
