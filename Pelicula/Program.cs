@@ -46,7 +46,7 @@ namespace Pelicula
         {
             return Año;
         }
-        public void AñadirActor(Actor actor)
+        public void AgregaActor(Actor actor)
         {
             actores.Add(actor);
         }
