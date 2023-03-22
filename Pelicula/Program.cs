@@ -56,15 +56,19 @@ namespace Pelicula
 
     public class Actor
     {
+        //Propiedades
         private string Nombre;
         private Int16 Año;
         private string País;
         private Int16 Edad;
-
-        //Propiedades
-
         //Constructores
-
+          public Actor (string Nombre, Int16 Año, string País, Int16 Edad)
+        {
+            this.Nombre = Nombre; 
+            this.Año = Año;
+            this.País = País;
+            this.Edad = Edad;
+        }
         //Métodos 
         public void Imprime()
         {
