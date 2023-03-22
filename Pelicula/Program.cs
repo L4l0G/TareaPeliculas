@@ -6,46 +6,22 @@ namespace Pelicula
 
     public class Pelicula
     {
+        public string Titulo;
+        public Int16 Año;
+        public string País;
+        public string Director;
         //Campos
-        private List<Actor> actores = new List<Actor>();
-
-        //Constructores
-     
-        //Métodos
-     
-        public void Imprime()
-        {
-     //       Console.WriteLine($"{titulo} ({año})");
-
-        }
-
-
-    }
-
-    public class Actor
-    {
-        //Propiedades
-
-        //Constructores
-
-
-        //Métodos 
-        public void Imprime()
-        {
-            Console.WriteLine($"{Nombre} ({Año})");
-        }
-    }
-
-    // Puedes probar tu código en Main() pero lo importante
-    // es que pase las pruebas
 
     class Program
     {
-
-
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+           Pelicula p1= new Pelicula();
+           Pelicula p2 = new Pelicula();
+           p1.Titulo = "Parasite";
+           p1.Año = 2019;
+           Console.ReadLine($"{Titulo}");
+           Console.ReadLine($"{Año}")
         }
     }
-}
+} }
