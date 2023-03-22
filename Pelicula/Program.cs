@@ -51,7 +51,7 @@ namespace Pelicula
         }
         public void Imprime()
         {
-            Console.WriteLine($"{Titulo}({Año})");
+            Console.WriteLine($"{Titulo} ({Año})");
         }
 
         public void ImprimeActores()
@@ -78,7 +78,7 @@ namespace Pelicula
         //Métodos 
         public void Imprime()
         {
-            Console.WriteLine($"{Nombre} {Año})");
+            Console.WriteLine($"{Nombre} ({Año})");
         }
     }
 
@@ -98,12 +98,11 @@ namespace Pelicula
            p1.AgregaActor(new Actor("Cho Yeo-jeong", 1981));
            p1.ImprimeActores();
            Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
-           p2.SetTitulo("La La Land ");
-           
+           p2.SetTitulo("La La Land");
            p2.SetAño (2016);
-           p2.AgregaActor(new Actor ("Ryan Gosling", (1980)));
+           p2.AgregaActor(new Actor ("Ryan Gosling", 1980));
            p2.ImprimeActores();
-           p2.AgregaActor(new Actor ("Emma Stone", (1988)));
+           p2.AgregaActor(new Actor ("Emma Stone", 1988));
            p2.ImprimeActores();
            Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño());
         }
