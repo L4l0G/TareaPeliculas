@@ -55,7 +55,7 @@ namespace Pelicula
             Console.WriteLine($"{Titulo}({Año})");
         }
 
-        public void ImprimirActor()
+        public void ImprimeActores()
         {
             foreach (Actor protagonista in actores)
             {
@@ -95,12 +95,12 @@ namespace Pelicula
            p1.SetTitulo("Parasite");
            p1.SetAño(2019);
            p1.AñadirActor(new Actor("Song Kang-ho", 1967));
-           p1.ImprimirActor();
+           p1.ImprimeActores();
            Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
            p2.SetTitulo("Everything Everywhere All At Once");
            p2.SetAño(2022);
            p2.AñadirActor(new Actor ("Michelle Yeoh", 1962));
-           p2.ImprimirActor();
+           p2.ImprimeActores();
            Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño());
         }
     }
