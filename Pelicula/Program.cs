@@ -7,7 +7,7 @@ namespace Pelicula
     public class Pelicula
     {
         //Campo
-        private string Titulo {get; set;}
+        private string Titulo;
         private Int16 Año;
         private string País;
         private string Director;
@@ -46,10 +46,21 @@ namespace Pelicula
         {
             return Año;
         }
-
+        public void AñadirActor(Actor actor)
+        {
+            actores.Add(actor);
+        }
         public void Imprime()
         {
             Console.WriteLine($"{Titulo}({Año})");
+        }
+
+        public void ImprimirActores()
+        {
+            foreach (Actor protagonista in actores)
+            {
+                protagonista.Imprime();
+            }
         }
 
     }
