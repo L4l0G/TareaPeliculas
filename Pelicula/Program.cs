@@ -35,6 +35,16 @@ namespace Pelicula
             this.Año = Año;
             return Año;
         }
+         public string SetPaís(string País)
+        {
+            this.País = País;
+            return País;
+        }
+        public string SetDirector(string Director)
+        {
+            this.Director = Director;
+            return Director;
+        }
 
         public string GetTitulo()
         {
@@ -45,6 +55,16 @@ namespace Pelicula
         {
             return Año;
         }
+         public string GetPaís()
+        {
+            return País;
+        }
+
+         public string GetDirector()
+        {
+            return Director;
+        }
+
         public void AgregaActor(Actor actor)
         {
             actores.Add(actor);
@@ -93,18 +113,22 @@ namespace Pelicula
            Pelicula p2 = new Pelicula();
            p1.SetTitulo("Parasite");
            p1.SetAño (2019);
+           p1.SetPaís("Corea Del Sur");
+           p1.SetDirector("Bong Joon-ho");
            p1.AgregaActor(new Actor("Song Kang-ho", 1967));
            p1.ImprimeActores();
            p1.AgregaActor(new Actor("Cho Yeo-jeong", 1981));
            p1.ImprimeActores();
-           Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
+           Console.WriteLine("{0}({1}){2}{3}", p1.GetTitulo(), p1.GetAño(), p1.GetPaís(), p1.GetDirector());
            p2.SetTitulo("La La Land");
            p2.SetAño (2016);
+           p2.SetPaís("Estados Unidos");
+           p2.SetDirector("Damien Chazelle");
            p2.AgregaActor(new Actor ("Ryan Gosling", 1980));
            p2.ImprimeActores();
            p2.AgregaActor(new Actor ("Emma Stone", 1988));
            p2.ImprimeActores();
-           Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño());
+           Console.WriteLine("{0}({1}){2}{3}", p2.GetTitulo(), p2.GetAño(), p1.GetPaís(), p1.GetDirector());
         }
     }
 } 
